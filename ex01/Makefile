@@ -6,7 +6,7 @@
 #    By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/03/25 16:48:36 by dufama            #+#    #+#              #
-#    Updated: 2026/03/25 17:18:04 by dufama           ###   ########.fr        #
+#    Updated: 2026/03/26 17:26:57 by dufama           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ HEADER_DIR 	= headers
 SRCS_DIR	= srcs
 OBJ_DIR		= obj
 
-SRCS_FILES	= main.cpp ClapTrap.cpp
+SRCS_FILES	= main.cpp ClapTrap.cpp ScavTrap.cpp
 SRCS		= $(addprefix $(SRCS_DIR)/, $(SRCS_FILES))
 OBJ			= $(addprefix $(OBJ_DIR)/, $(SRCS_FILES:.cpp=.o))
 CXXFLAGS 	+= -I $(HEADER_DIR)
