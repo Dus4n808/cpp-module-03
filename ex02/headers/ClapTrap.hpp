@@ -6,7 +6,7 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 16:49:57 by dufama            #+#    #+#             */
-/*   Updated: 2026/03/26 16:30:10 by dufama           ###   ########.fr       */
+/*   Updated: 2026/03/26 17:03:53 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 #include <string>
 
 class ClapTrap {
-	private:
+	protected:
 		std::string _name;
 		unsigned int _hit;
 		unsigned int _energy;

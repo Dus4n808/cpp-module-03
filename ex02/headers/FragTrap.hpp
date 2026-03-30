@@ -1,31 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/25 18:09:43 by dufama            #+#    #+#             */
-/*   Updated: 2026/03/30 15:49:39 by dufama           ###   ########.fr       */
+/*   Created: 2026/03/30 16:11:58 by dufama            #+#    #+#             */
+/*   Updated: 2026/03/30 16:41:24 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAVTRAP_H
-#define SCAVTRAP_H
+#ifndef FRAGTRAP_HPP
+#define FRAGTRAP_HPP
 
 #include "../headers/ClapTrap.hpp"
 
-class ScavTrap: public ClapTrap {
-	public:
-		ScavTrap();
-		ScavTrap(std::string const &name);
-		ScavTrap(const ScavTrap &copy);
-		ScavTrap &operator=(const ScavTrap &assign);
-		~ScavTrap();
 
-		void guardGate();
+class FragTrap : public ClapTrap {
+		public:
+		//constructor
+			FragTrap();
+			FragTrap(std::string const &name);
+		//copy
+			FragTrap(const FragTrap &copy);
+		//assign
+			FragTrap &operator=(const FragTrap &assign);
+		//destructor
+			~FragTrap();
 
+		//func member
+			void highFivesGuys(void);
+			void sayName(void);
 };
-
 
 #endif

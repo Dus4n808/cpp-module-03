@@ -6,7 +6,7 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 18:10:20 by dufama            #+#    #+#             */
-/*   Updated: 2026/03/30 16:09:25 by dufama           ###   ########.fr       */
+/*   Updated: 2026/03/30 16:40:30 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,7 @@ ScavTrap::ScavTrap(const ScavTrap &copy) : ClapTrap(copy) {
 
 ScavTrap &ScavTrap::operator=(const ScavTrap &assign) {
 	if (this != &assign)
-	{
-		_name = assign._name;
-		_hit = assign._hit;
-		_energy = assign._energy;
-		_attack = assign._attack;
-	}
+		ClapTrap::operator=(assign);
 	return *this;
 }
 

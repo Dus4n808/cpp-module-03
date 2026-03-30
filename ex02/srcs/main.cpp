@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/25 18:09:43 by dufama            #+#    #+#             */
-/*   Updated: 2026/03/30 15:49:39 by dufama           ###   ########.fr       */
+/*   Created: 2026/03/25 16:50:42 by dufama            #+#    #+#             */
+/*   Updated: 2026/03/30 16:42:53 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAVTRAP_H
-#define SCAVTRAP_H
-
 #include "../headers/ClapTrap.hpp"
+#include "../headers/ScavTrap.hpp"
+#include "../headers/FragTrap.hpp"
 
-class ScavTrap: public ClapTrap {
-	public:
-		ScavTrap();
-		ScavTrap(std::string const &name);
-		ScavTrap(const ScavTrap &copy);
-		ScavTrap &operator=(const ScavTrap &assign);
-		~ScavTrap();
+int main()
+{
+	FragTrap paul("Paul");
+	FragTrap b;
 
-		void guardGate();
+	b.sayName();
+	b.highFivesGuys();
 
-};
+	FragTrap c;
+	c.sayName();
+	c = paul;
 
-
-#endif
+	c.sayName();
+}

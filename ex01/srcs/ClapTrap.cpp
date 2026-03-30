@@ -6,7 +6,7 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 16:51:08 by dufama            #+#    #+#             */
-/*   Updated: 2026/03/26 16:58:44 by dufama           ###   ########.fr       */
+/*   Updated: 2026/03/30 15:40:26 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 //default
 
 ClapTrap::ClapTrap() : _name("default"), _hit(10), _energy(10), _attack(0) {
-	std::cout << "Constructor called" << std::endl;
+	std::cout << "Constructor ClapTrap called" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string const &name) : _name(name), _hit(10), _energy(10), _attack(0) {

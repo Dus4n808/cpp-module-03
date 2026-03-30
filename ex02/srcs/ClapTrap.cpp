@@ -6,24 +6,25 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 16:51:08 by dufama            #+#    #+#             */
-/*   Updated: 2026/03/26 16:56:34 by dufama           ###   ########.fr       */
+/*   Updated: 2026/03/30 16:27:55 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../headers/ClapTrap.hpp"
 
 //default
+
 ClapTrap::ClapTrap() : _name("default"), _hit(10), _energy(10), _attack(0) {
-	std::cout << "Constructor called" << std::endl;
+	std::cout << "Constructor ClapTrap called" << std::endl;
 }
 
-
 ClapTrap::ClapTrap(std::string const &name) : _name(name), _hit(10), _energy(10), _attack(0) {
-	std::cout << "Constructor called" << std::endl;
+	std::cout << "Constructor ClapTrap called" << std::endl;
 }
 
 //copy
 ClapTrap::ClapTrap(const ClapTrap &copy) : _name(copy._name), _hit(copy._hit), _energy(copy._energy), _attack(copy._attack) {
+	std::cout << "Copy ClapTrap called" << std::endl;
 }
 
 //assign
@@ -40,7 +41,7 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &rhs) {
 
 //destructor
 ClapTrap::~ClapTrap() {
-	std::cout << "Destructor called" << std::endl;
+	std::cout << "Destructor ClapTrap called" << std::endl;
 }
 
 
