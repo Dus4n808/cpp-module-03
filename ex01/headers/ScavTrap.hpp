@@ -6,7 +6,7 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 18:09:43 by dufama            #+#    #+#             */
-/*   Updated: 2026/03/30 15:49:39 by dufama           ###   ########.fr       */
+/*   Updated: 2026/04/08 15:44:31 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,9 @@ class ScavTrap: public ClapTrap {
 		~ScavTrap();
 
 		void guardGate();
+		//my test
+		void getHit();
+		void getEnergy();
 
 };
 

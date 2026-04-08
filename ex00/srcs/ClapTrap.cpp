@@ -6,7 +6,7 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 16:51:08 by dufama            #+#    #+#             */
-/*   Updated: 2026/03/26 16:56:34 by dufama           ###   ########.fr       */
+/*   Updated: 2026/04/08 15:07:08 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 //default
 ClapTrap::ClapTrap() : _name("default"), _hit(10), _energy(10), _attack(0) {
-	std::cout << "Constructor called" << std::endl;
+	std::cout << "Default constructor called" << std::endl;
 }
 
 
 ClapTrap::ClapTrap(std::string const &name) : _name(name), _hit(10), _energy(10), _attack(0) {
-	std::cout << "Constructor called" << std::endl;
+	std::cout << "Default constructor(name) called" << std::endl;
 }
 
 //copy
@@ -45,42 +45,34 @@ ClapTrap::~ClapTrap() {
 
 
 void ClapTrap::attack(const std::string &target) {
-	if (_energy > 0 && _hit > 0)
-	{
+	if (_energy > 0 && _hit > 0) {
 		_energy -= 1;
 		std::cout << "ClapTrap "<< _name << " attacks " << target << ", causing " << _attack << " points of damage!" << std::endl;
-	}
-	else
-	{
+	} else {
 		std::cout << _name << " can't attack (no energy or no hit points left)" << std::endl;
 	}
 }
 
 void ClapTrap::takeDamage(unsigned int amount) {
-	if (_hit == 0)
-	{
+	if (_hit == 0) {
 		std::cout << "ClapTrap " << _name << " is already dead !" << std::endl;
 		return ;
 	}
-	if (amount >= _hit)
-	{
+	if (amount >= _hit) {
 		_hit = 0;
 		std::cout << "ClapTrap " << _name << " takes " << amount << " points of damage and is DESTROYED!" << std::endl;
-	}
-	else
-	{
+	} else {
 		_hit -= amount;
 		std::cout << "ClapTrap " << _name << " takes " << amount << " points of damage !(" << _hit << " HP left)" << std::endl;
 	}
 }
 
 void ClapTrap::beRepaired(unsigned int amount) {
-	if (_hit == 0 || _energy == 0)
-	{
+	if (_hit == 0 || _energy == 0) {
 		std::cout << "ClapTrap " << _name << " can't repair itself (no HP or no energy left)!" << std::endl;
 		return ;
 	}
-
+	
 	_hit += amount;
 	_energy -= 1;
 

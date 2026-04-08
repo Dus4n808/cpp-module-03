@@ -6,7 +6,7 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/30 16:58:43 by dufama            #+#    #+#             */
-/*   Updated: 2026/03/30 18:58:10 by dufama           ###   ########.fr       */
+/*   Updated: 2026/04/08 16:30:58 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 //Default
 DiamondTrap::DiamondTrap() : ClapTrap("Default_clap_name") , FragTrap(), ScavTrap() {
-	std::cout << "Constructor DiamondTrap called" << std::endl;
+	std::cout << "default constructor DiamondTrap called" << std::endl;
 	_name = "Default";
 	_hit = 100;
 	_energy = 50;
@@ -22,7 +22,7 @@ DiamondTrap::DiamondTrap() : ClapTrap("Default_clap_name") , FragTrap(), ScavTra
 }
 
 DiamondTrap::DiamondTrap(std::string const &name) : ClapTrap(name + "_clap_name"), FragTrap(name), ScavTrap(name) {
-	std::cout << "Constructor DiamondTrap called" << std::endl;
+	std::cout << "Default constructor DiamondTrap(name) called" << std::endl;
 	_name = name;
 	_hit = 100;
 	_energy = 50;

@@ -6,7 +6,7 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 16:50:42 by dufama            #+#    #+#             */
-/*   Updated: 2026/03/25 17:53:27 by dufama           ###   ########.fr       */
+/*   Updated: 2026/04/08 15:42:10 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,12 @@
 
 int main()
 {
-	ClapTrap kill("Dusan");
-	ClapTrap victime("Fab");
-
-	kill.attack("Fab");
-	victime.takeDamage(10);
-	victime.beRepaired(1);
+	ClapTrap bob("Bob");
+	ClapTrap lucas("lucas");
+	ClapTrap lol;
+	bob.attack("lucas");
+	for (int i = 0; i < 11; i++) {
+		bob.beRepaired(1);
+	}
 	return 0;
 }

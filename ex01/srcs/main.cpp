@@ -6,7 +6,7 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 16:50:42 by dufama            #+#    #+#             */
-/*   Updated: 2026/03/30 15:51:13 by dufama           ###   ########.fr       */
+/*   Updated: 2026/04/08 15:58:42 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,31 @@
 
 int main()
 {
-	ScavTrap jeff("Jeff");
-	ScavTrap lol;
+	//first
+	ScavTrap bob("Bob");
+	bob.getEnergy();
+	bob.getHit();
 
-	lol = jeff;
+	//second
+	ScavTrap paul("Paul");
+	paul.getEnergy();
+	paul.getHit();
 
-	jeff.guardGate();
-	lol.guardGate();
+	//action
 
+	paul.attack("Bob");
+	bob.takeDamage(20);
+	bob.getHit();
+	bob.beRepaired(20);
+	bob.getEnergy();
+	bob.getHit();
+	bob.guardGate();
+
+	//copy test
+	ScavTrap pierre("Pierre");
+	pierre = bob;
+	ScavTrap a(pierre);
+	pierre.getEnergy();
+	a.getEnergy();
 
 }

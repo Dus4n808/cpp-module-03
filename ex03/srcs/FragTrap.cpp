@@ -6,7 +6,7 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/30 16:12:25 by dufama            #+#    #+#             */
-/*   Updated: 2026/03/30 16:43:36 by dufama           ###   ########.fr       */
+/*   Updated: 2026/04/08 16:31:22 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 //default
 FragTrap::FragTrap() : ClapTrap() {
-	std::cout << "Constructor FragTrap called" << std::endl;
+	std::cout << "Default constructor FragTrap called" << std::endl;
 	_hit = 100;
 	_energy = 100;
 	_attack = 30;
@@ -22,7 +22,7 @@ FragTrap::FragTrap() : ClapTrap() {
 
 //default name
 FragTrap::FragTrap(std::string const &name) : ClapTrap(name) {
-	std::cout << "Constructor FragTrap called" << std::endl;
+	std::cout << "Default constructor FragTrap(name) called" << std::endl;
 	_hit = 100;
 	_energy = 100;
 	_attack = 30;
