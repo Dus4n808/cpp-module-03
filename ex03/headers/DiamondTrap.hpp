@@ -6,7 +6,7 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/30 16:54:39 by dufama            #+#    #+#             */
-/*   Updated: 2026/04/09 16:14:05 by dufama           ###   ########.fr       */
+/*   Updated: 2026/04/09 16:30:59 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,6 @@ class DiamondTrap : public FragTrap, public ScavTrap {
 	//destructor
 		~DiamondTrap();
 		void whoAmI(void);
-		//my func
-		void getEnergy(void);
 
 
 };

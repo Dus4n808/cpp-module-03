@@ -6,7 +6,7 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/30 16:58:43 by dufama            #+#    #+#             */
-/*   Updated: 2026/04/09 16:15:40 by dufama           ###   ########.fr       */
+/*   Updated: 2026/04/09 16:30:52 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,10 +55,6 @@ DiamondTrap::~DiamondTrap() {
 void DiamondTrap::whoAmI(void) {
 	std::cout << ClapTrap::_name << std::endl;
 	std::cout << _name << std::endl;
-}
-
-void DiamondTrap::getEnergy(void) {
-	
 }
 
 
