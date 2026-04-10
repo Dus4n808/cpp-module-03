@@ -6,7 +6,7 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/30 16:54:39 by dufama            #+#    #+#             */
-/*   Updated: 2026/04/09 16:30:59 by dufama           ###   ########.fr       */
+/*   Updated: 2026/04/10 15:57:04 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class DiamondTrap : public FragTrap, public ScavTrap {
 	private:
 		std::string _name;
 	public:
-	//defautl
+	//default
 		DiamondTrap();
 		DiamondTrap(std::string const &name);
 	//copy
@@ -30,7 +30,9 @@ class DiamondTrap : public FragTrap, public ScavTrap {
 		DiamondTrap &operator=(const DiamondTrap &assign);
 	//destructor
 		~DiamondTrap();
+	//hello
 		void whoAmI(void);
+		void getHit();
 
 
 };

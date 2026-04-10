@@ -6,7 +6,7 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 16:51:08 by dufama            #+#    #+#             */
-/*   Updated: 2026/04/08 16:27:51 by dufama           ###   ########.fr       */
+/*   Updated: 2026/04/10 16:26:22 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,4 +78,9 @@ void ClapTrap::beRepaired(unsigned int amount) {
 	_energy -= 1;
 
 	std::cout << "ClapTrap " << _name << " repairs itself " << amount << " HP!(" << _hit << " HP left)" << std::endl;
+}
+
+
+void ClapTrap::getHit() {
+	std::cout << _energy << std::endl;
 }

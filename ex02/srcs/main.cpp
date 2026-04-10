@@ -6,7 +6,7 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 16:50:42 by dufama            #+#    #+#             */
-/*   Updated: 2026/04/09 15:47:30 by dufama           ###   ########.fr       */
+/*   Updated: 2026/04/10 16:29:26 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,20 @@
 
 int main()
 {
-	FragTrap paul("Paul");
-	FragTrap alex("Alex");
+	ClapTrap *a[3];
 
-	alex.highFivesGuys();
-	alex.sayName();
-	paul = alex;
-	paul.sayName();
-	FragTrap jean(alex);
-	jean.highFivesGuys();
+	a[0] = new ScavTrap;
+	a[1] = new ClapTrap;
+	a[2] = new FragTrap;
+
+
+	a[0]->attack("Paul");
+	a[1]->attack("Jack");
+	a[0]->getHit();
+	a[1]->getHit();
+	a[2]->getHit();
+	delete a[0];
+	delete a[1];
+	delete a[2];
+
 }

@@ -6,7 +6,7 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 18:09:43 by dufama            #+#    #+#             */
-/*   Updated: 2026/04/09 17:56:09 by dufama           ###   ########.fr       */
+/*   Updated: 2026/04/10 11:11:32 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class ScavTrap: public ClapTrap {
 		~ScavTrap();
 
 		void guardGate();
-		void attack(const std::string &name);
+		void attack(const std::string &target);
 		//my test
 		void getHit();
 		void getEnergy();
