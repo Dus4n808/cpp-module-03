@@ -6,7 +6,7 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 18:09:43 by dufama            #+#    #+#             */
-/*   Updated: 2026/03/30 17:18:30 by dufama           ###   ########.fr       */
+/*   Updated: 2026/04/13 14:12:19 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ class ScavTrap: virtual public ClapTrap {
 		~ScavTrap();
 
 		void guardGate();
+		void attack(const std::string &target);
 
 };
 

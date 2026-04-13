@@ -6,7 +6,7 @@
 /*   By: dufama <dufama@student.42lausanne.ch>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/30 16:54:39 by dufama            #+#    #+#             */
-/*   Updated: 2026/04/10 15:57:04 by dufama           ###   ########.fr       */
+/*   Updated: 2026/04/13 14:14:19 by dufama           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ class DiamondTrap : public FragTrap, public ScavTrap {
 		~DiamondTrap();
 	//hello
 		void whoAmI(void);
-		void getHit();
+		void attack(const std::string &target);
 
 
 };
